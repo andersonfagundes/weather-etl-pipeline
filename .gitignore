@@ -19,3 +19,4 @@ data/*.xlsx
 *.tmp
 /data
 /config
+config/.env
