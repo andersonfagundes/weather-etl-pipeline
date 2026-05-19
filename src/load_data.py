@@ -11,11 +11,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 env_path = Path(__file__).resolve().parent.parent / 'config' / '.env'
 load_dotenv(env_path)
 
+print("HOST ENV:", os.getenv("host"))
 user = os.getenv('user')
 password = os.getenv('password')
 database = os.getenv('database')
-#host = 'host.docker.internal'
-host = 'localhost'
+host = 'host.docker.internal'
+#host =  os.getenv('host')
 
 def get_engine():
     logging.info(f"→ Conectando em {host}:5432/{database}")
