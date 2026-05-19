@@ -22,3 +22,6 @@ data/*.xlsx
 config/.env
 
 logs/*
+
+dags/__pycache__/*
+src/__pycache__/*
