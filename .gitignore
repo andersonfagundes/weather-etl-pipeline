@@ -20,3 +20,5 @@ data/*.xlsx
 /data
 /config
 config/.env
+
+logs/*
